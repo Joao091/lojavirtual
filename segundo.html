@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="index.html">VOLTAR PARA A PÁGINA INICIAL</a>
+
+    <center>
+    <form>
+    <label>Nome:</label>
+    <input type="text" name="nome" placeholder="seu nome">
+
+    <label>E-mail:</label>
+    <input type="email" name="email" placeholder="seu E-mail">
+
+    <label>Telefone:</label>
+    <input type="telefone" name="telefone" placeholder="seu telefone">
+
+    <label>Mensagem:</label>
+    <input type="text" name="mensagem" placeholder="sua mensagem">
+
+    <input type="submit" onclick="enviar(); return false">
+    </form>
+</center>
+
+<style>
+    a{ 
+        border: 1px solid #fff;
+        width: 140px;
+        text-align: center;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        background-color: #1d2631;
+        color: #fff;
+    }
+
+    a:hover{
+        box-shadow: 2px 2px 2px #000;
+    }
+
+</style>
+
+<script>
+    function enviar(){
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var telefone = document.getElementById('telefone').value;
+    var mensagem = document.getElementById('mensagem').value;
+
+    location.href = "index.html"
+    
+}
+</script>
+</body>
+</html>
